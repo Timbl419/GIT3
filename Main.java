@@ -4,6 +4,7 @@ class Main {
         System.out.println();
         System.out.println("Сумма 2 + 3 = " + sum(2, 3));
         printNumbers(5);
+        System.out.println("4 чётное? " + isEven(4));
     }
 
     static int sum(int a, int b) {
@@ -15,5 +16,9 @@ class Main {
             System.out.print(i + " ");
         }
         System.out.println();
+    }
+
+    static boolean isEven(int n) {
+        return n % 2 == 0;
     }
 }
